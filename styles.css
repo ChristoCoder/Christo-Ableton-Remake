@@ -1,0 +1,114 @@
+body {
+    font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-size: 16px;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+#nav-bar {
+    position: sticky;
+    z-index: 10;
+    top:0;
+    width: 100%;
+}
+
+.homepage-column {
+    background-image: url(/assets/home.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+}
+
+.banner-block {
+    padding-top:90px;
+    margin-bottom: 90px;
+    position: relative;
+    min-height: 90vh;
+    color: white;
+}
+
+.navbar {
+    padding: 1.25rem !important;
+    position: absolute !important;
+    width: 100%;
+}
+
+.main-nav__logo__image {
+    width: 3.5em;
+    height: 1.5em;
+}
+
+.navbar-toggler {
+    border: none !important;
+    font-weight: bold;
+    font-size: 1.2rem !important;
+    box-shadow:none !important;
+    color: black !important;
+}
+
+.navbar-toggler .menu-arrow {
+    font-size: 10px; 
+    vertical-align: middle; 
+}
+
+.navbar-toggler[aria-expanded="true"] .menu-arrow {
+    transform: rotate(180deg); 
+    display: inline-block;
+    transition: transform 0.3s ease;
+    color: white !important;
+}
+
+.navbar-toggler[aria-expanded="true"] .nav-btn_menu {
+    color: white !important;
+}
+
+.homepage-column {
+    padding: 8.33333333vw;
+}
+
+.navbar-custom {
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-custom.open {
+    background-color: blue;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .menu-arrow {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom.open .navbar-brand,
+.navbar-custom.open .nav-link,
+.navbar-custom.open .menu-arrow
+.navbar-custom .nav-btn_menu  {
+    color: white !important;
+}
+
+@media (max-width:992px) {
+    #navbarNav{
+        transition: all 0.2s ease;
+        transform: translateY(-100%);
+    }
+    
+    #navbarNav.show {
+        transform: translateY(0);
+    }
+}
+
+.blog-teaser_media {
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0.8em;
+    padding-bottom: 56.25%;
+}
