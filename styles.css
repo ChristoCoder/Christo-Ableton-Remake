@@ -15,7 +15,7 @@ body {
 }
 
 .homepage-column {
-    background-image: url(/assets/home.avif);
+    background-image: url(./assets/home.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
